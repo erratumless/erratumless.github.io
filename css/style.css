@@ -47,6 +47,7 @@ body{
 .row{
 	outline:1px solid #f00;
 }*/
+
 .logo{
 	margin-top: 60px;
 	font-family: 'Roboto', 'sans-serif';
@@ -54,10 +55,13 @@ body{
 	font-weight:700;
 	text-transform:uppercase;
 	color:#fff;
+	padding: 20px 40px;
+	background-color: #242424;
+	box-shadow: 0 0 42px -2px;
+	height: 100%;
 }
 .logo img {
-	height: 144px;
-	box-shadow: 0 0 11px 9px;
+	height: 100px;
 }
 
 .logo span{
@@ -75,6 +79,17 @@ body{
 	cursor:pointer;
 	color:#fff;
 	text-decoration:none;
+}
+.flexrow {
+	display: flex;
+	align-items: center;
+}
+.menuContent {
+	flex: 1;
+	margin-bottom: 36px;
+}
+.fixed .menuContent {
+	margin-bottom: 0px;
 }
 #menu a:active {
 color:#1fcdff;
@@ -2057,23 +2072,30 @@ margin-bottom: 35px !important;
 
 
 /*                                                                    */
-	.default{
-		transition-duration: 1s;
-	}
+		#navWrap {
+			height: 204px;
+		}
+    .default{
+      transition-duration: 1s;
+    }
     .fixed {
-		transition-duration: 1s;
-		/*text-align:center;*/
-		z-index:999;
-        position:fixed;
-        top: -65px; 
-        padding:20px 0;
-        width:100%;
-		background-color: #242424 !important;
+			transition-duration: 1s;
+			/*text-align:center;*/
+			z-index:999;
+			position:fixed;
+			top: -65px;
+			padding:20px 0;
+			width:100%;
+			background-color: #242424 !important;
     }
 
 		.fixed .logo img {
 			height: 42px;
-			box-shadow: 0 0 11px 8px;
+		}
+
+		.fixed .logo {
+			box-shadow: none;
+			padding: 0px 0px;
 		}
 
 /**/

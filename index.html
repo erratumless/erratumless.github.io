@@ -47,17 +47,18 @@
 
     <div id="home">
       <div class="headerLine">
+        <div id="navWrap">
           <div id="menuF" class="default">
             <div class="container">
-              <div class="row">
-                <div class="logo col-md-4">
+              <div class="flexrow">
+                <div class="logo">
                   <div>
                     <a href="#">
                       <img src="images/logo.png">
                     </a>
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="menuContent">
                   <div class="navmenu"style="text-align: center;">
                     <ul id="menu">
                       <li class="active" ><a href="#home">Home</a></li>
@@ -72,30 +73,31 @@
               </div>
             </div>
           </div>
-            <div class="container">
-              <div class="row wrap">
-                <div class="col-md-12 gallery">
-                  <div class="camera_wrap camera_white_skin" id="camera_wrap_1">
-                    <div data-thumb="" data-src="images/slides/blank.gif">
-                      <div class="img-responsive camera_caption fadeFromBottom">
-                        <h2>Agile processes.</h2>
-                      </div>
-                    </div>
-                    <div data-thumb="" data-src="images/slides/blank.gif">
-                      <div class="img-responsive camera_caption fadeFromBottom">
-                        <h2>From concept.</h2>
-                      </div>
-                    </div>
-                    <div data-thumb="" data-src="images/slides/blank.gif">
-                      <div class="img-responsive camera_caption fadeFromBottom">
-                        <h2>To delivery.</h2>
-                      </div>
-                    </div>
-                  </div><!-- #camera_wrap_1 -->
+        </div>
+      <div class="container">
+        <div class="row wrap">
+          <div class="col-md-12 gallery">
+            <div class="camera_wrap camera_white_skin" id="camera_wrap_1">
+              <div data-thumb="" data-src="images/slides/blank.gif">
+                <div class="img-responsive camera_caption fadeFromBottom">
+                  <h2>Agile processes.</h2>
                 </div>
               </div>
-            </div>
+              <div data-thumb="" data-src="images/slides/blank.gif">
+                <div class="img-responsive camera_caption fadeFromBottom">
+                  <h2>From concept.</h2>
+                </div>
+              </div>
+              <div data-thumb="" data-src="images/slides/blank.gif">
+                <div class="img-responsive camera_caption fadeFromBottom">
+                  <h2>To delivery.</h2>
+                </div>
+              </div>
+            </div><!-- #camera_wrap_1 -->
           </div>
+        </div>
+      </div>
+      </div>
             <div class="container">
               <div class="row">
                 <div class="col-md-12 cBusiness">
@@ -620,9 +622,9 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-       
+
         var $menu = $("#menuF");
-            
+
         $(window).scroll(function(){
             if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
                 $menu.fadeOut('fast',function(){
@@ -638,7 +640,7 @@
                 });
             }
         });
-  });
+    });
     //jQuery
   </script>
   <script>
